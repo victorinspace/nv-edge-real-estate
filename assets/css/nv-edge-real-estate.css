@@ -28,6 +28,24 @@ body {
   height: 800px;
 }
 
+#nav {
+  display: flex;
+  flex-direction: inline;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  border-bottom: 5px solid var(--blue-light);
+  max-height: 100px;
+}
+
+#nav img {
+  max-width: 375px;
+  padding: 5px 0 10px;
+}
+
+#nav-tp {
+  margin-top: 25px;
+}
+
 /* ==================================================================
   Product Information
   =================================================================== */
