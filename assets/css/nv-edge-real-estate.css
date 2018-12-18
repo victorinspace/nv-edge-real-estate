@@ -18,16 +18,8 @@ body {
 }
 
 /* ==================================================================
-  Main Header
+  Nav
   =================================================================== */
-#jumbo {
-  background-image: url('../images/body/tools-on-table.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 800px;
-}
-
 #nav {
   display: flex;
   flex-direction: inline;
@@ -45,6 +37,31 @@ body {
 #nav-tp {
   margin-top: 25px;
 }
+
+/* ==================================================================
+  Header
+  =================================================================== */
+#jumbo {
+  background-image: url('../images/body/tools-on-table.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+
+/* Form
+  =================================================================== */
+  #form {
+    max-width: 400px;
+    padding: 20px 15px;
+    background: var(--flavor);
+    border-radius: 5px;
+  }
+
+  #download-button {
+    /* background-color: var(--accent); */
+    width: 100%;
+  }
 
 /* ==================================================================
   Product Information

@@ -43,30 +43,52 @@
     <!-- Main Header -->
     <div id="jumbo">
 
-      <form data-toggle="validator" class="" action=""
-        method="post" id="videoForm">
-        <!-- Name Input -->
-        <input type="hidden" id="page" name="page" value="" />
-        <div class="form-group mx-sm-2 my-1">
-          <input type="text" class="form-control" id="fname" name="fname" value="" placeholder="Your
-          Full Name" required>
-        </div>
-        <div class="form-group mx-sm-2 my-1">
-          <input type="email" class="form-control" id="email" name="email" value=""
-          placeholder="Primary Email Address" required>
-        </div>
-        <div class="form-group mx-sm-2 my-1">
-          <input type="tel" class="form-control" id="phone" name="phone" data-mask="(000) 000-0000" data-minlength="14" value="" placeholder="Best Contact Number" required>
-        </div>
-        <div class="form-group mx-sm-2 my-1">
-          <button type="submit" class="btn btn-primary form-control my-2">Download Now <i class="fa fa-download"></i></button>
-        </div>
-      </form>
+      <!-- form -->
+      <div class="hero-item" id="form">
+        <form class="form-action" method="POST" action="">
+      
+          <h4><strong>The Nevada Edge</strong></h4>
+          <p>Download your copy today!</p>
+      
+          <!-- name input -->
+          <div class="input-group <?php if (!empty($full_nameErr)) { echo 'having-error'; } ?>">
+            <input type="text" class="mb-2 form-control" id="full_name" name="full_name" value="<?php echo $full_name;?>"
+              placeholder="Your full name">
+      
+            <label class="help-block text-danger" for="full_name">
+              <?php echo $full_nameErr;?>
+            </label>
+          </div><!-- name input -->
+      
+          <!-- email input -->
+          <div class="input-group <?php if (!empty($emailErr)) { echo 'having-error'; } ?>">
+            <input type="email" class="mb-2 form-control" id="email" name="email" value="<?php echo $email;?>" placeholder="Your e-mail address">
+      
+            <label class="help-block text-danger" for="email">
+              <?php echo $emailErr;?>
+            </label>
+          </div><!-- email input -->
+      
+          <!-- phone input -->
+          <div class="input-group <?php if (!empty($phoneErr)) { echo 'having-error'; } ?>">
+            <input type="tel" class="mb-2 form-control" id="phone" name="phone" value="<?php echo $phone;?>" placeholder="Your phone number">
+      
+            <label class="help-block text-danger" for="phone">
+              <?php echo $phoneErr;?>
+            </label>
+          </div><!-- phone input -->
+      
+          <button type="submit" class="btn btn-danger" id="download-button"><strong>Download</strong></button>
+      
+        </form>
+      </div><!-- form -->
 
       <div class="row">
-        <h1>Your Free Guide to Nevada Real Estate</h1>
-        <p>This is the newly released 5th Edition, authored by world famous entrepreneur Cort Christie, packed with everything you
-        need to know about the benefits of forming your LLC or corporation in Nevada.</p>
+        <div class="hero-item" id="hero-copy">
+          <h1>Your Free Guide to Nevada Real Estate</h1>
+          <p>This is the newly released 5th Edition, authored by world famous entrepreneur Cort Christie, packed with everything you
+          need to know about the benefits of forming your LLC or corporation in Nevada.</p>
+        </div>
       </div>
     </div>
     <!-- Main Header -->
