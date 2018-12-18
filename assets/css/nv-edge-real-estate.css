@@ -1,6 +1,6 @@
 /* ==================================================================
   Root Colors
-  =================================================================== */
+===================================================================== */
 :root {
   --mood: rgb(255, 243, 213);
   --flavor: rgb(83, 123, 164);
@@ -11,7 +11,7 @@
 *{box-sizing: border-box;}
 
 /* Root Colors
-  =================================================================== */
+===================================================================== */
 body {
   background-color: var(--mood);
   font-family: 'Fira Sans', sans-serif;
@@ -24,7 +24,7 @@ p {
 
 /* ==================================================================
   Nav
-  =================================================================== */
+===================================================================== */
 #nav {
   display: flex;
   flex-direction: inline;
@@ -45,7 +45,7 @@ p {
 
 /* ==================================================================
   Header
-  =================================================================== */
+===================================================================== */
 #hero-section {
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/body/tools-on-table.jpg');
   background-repeat: no-repeat;
@@ -70,25 +70,28 @@ p {
   text-shadow: 1px 1px 2px #000;
   color: #fff;
 }
+
 #hero-copy h1 {
   font-size: 2.1em;
   font-weight: bold;
   line-height: 1.1;
 }
+
 #hero-copy p {
   font-size: 1em;
 }
+
 #hero-copy span {
-  color: var(--yellow);
+  color: var(--accent);
   text-decoration: underline; 
 }
 
 /* Form
-  =================================================================== */
+===================================================================== */
 #form {
   max-width: 350px;
   /* max-height: 465px; */
-  background-color: var(--nv-blue);
+  background-color: var(--flavor);
   color: #fff;
   font-size: 20px;
   padding: 25px;
@@ -129,8 +132,8 @@ form {
   padding: 20px;
   font-size: 20px;
   font-weight: bold;
-  background-color: var(--yellow);
-  color: var(--nv-blue);
+  /* background-color: var(--yellow); */
+  /* color: var(--nv-blue); */
   text-transform: uppercase;
   border-radius: 5px;
   cursor: pointer;
@@ -138,16 +141,16 @@ form {
 
 /* ==================================================================
   Product Information
-  =================================================================== */
+===================================================================== */
 #guide-section {
-  background-color: var(--main-bg);
-  color: #fff;
+  background-color: var(--mood);
+  /* color: #fff; */
   padding: 30px 20px 25px;
   border-bottom: 5px solid var(--primary-color);
 }
 
 #guide-section p {
-  color: #fff;
+  color: #000;
   /* font-size: 20px; */
   font-size: 1.3em;
   font-weight: lighter;
@@ -155,7 +158,7 @@ form {
 }
 
 #guide-heading {
-  color: #fff;
+  color: #000;
   padding: 20px 0 10px;
 }
 
@@ -171,9 +174,9 @@ form {
 
 /* ==================================================================
   About Cort
-  =================================================================== */
+===================================================================== */
 #about-section {
-  background-color: #fff;
+  background-color: var(--flavor);
   padding: 50px 0;
 }
 
@@ -189,7 +192,7 @@ form {
 
 /* ==================================================================
   Testimonial
-  =================================================================== */
+===================================================================== */
 #tp-section {
   background: var(--main-bg);
   padding: 50px 0 20px;
@@ -210,21 +213,21 @@ form {
 
 /* ==================================================================
   Footer
-  =================================================================== */
+===================================================================== */
 #footer-section {
   padding: 30px;
   text-align: center;
 }
 
 #copyright {
-    color: #81868a;
-    font-size: 1em;
-    /* font-style: italic; */
-  }
+  color: #81868a;
+  font-size: 1em;
+  /* font-style: italic; */
+}
 
 /* ==================================================================
   Media Queries
-  =================================================================== */
+===================================================================== */
 @media screen and (max-width: 830px) {
   
   /* header section */
